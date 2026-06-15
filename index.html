@@ -12,31 +12,68 @@
   </head>
   <body>
     <header>
-      <nav>
-        <li><a href="./index.html#" class="active">home</a></li>
-        <li><a href="./about.html">about</a></li>
-        <li><a href="./catalog.html">catalog</a></li>
+      <nav class="navbar">
+        <li class="nav-link"><a href="./index.html#" class="active">home</a></li>
+        <li class="nav-link"><a href="./about.html">about</a></li>
+        <li class="nav-link"><a href="./catalog.html">catalog</a></li>
       </nav>
       <a href="./index.html">
-        <img src="./assets/images/Horizontal Logo.png" alt="logo" class="logo">
+        <img src="./assets/images/Horizontal Logo.png" alt="logo" class="nav-logo">
       </a>
-      <nav>
-        <li><a href="./services.html">services</a></li>
-        <li><a href="./faq.html">faq</a></li>
+      <nav class="navbar">
+        <li class="nav-link"><a href="./services.html">services</a></li>
+        <li class="nav-link"><a href="./faq.html">faq</a></li>
         <a href="./catalog.html">
-          <button>buy now</button>
+          <button class="nav-cta">buy now</button>
         </a>
       </nav>
     </header>
     <main>
-      <section>
-        <div class="left-hero">
-          <img src="./assets/images/Square Logo.png" alt="hero image">
-        </div>
-        <div class="right-hero">
-          <h1>brownies</h1>
-          <p>delicious</p>
-        </div>
+      <section class="hero">
+        <article class="left-hero hero-container">
+          <img src="./assets/images/Square Logo.png" alt="hero image" class="hero-image">
+        </article>
+        <article class="right-hero hero-container">
+          <h1 class="heading">brownies</h1>
+          <p class="tagline">delicious</p>
+        </article>
+      </section>
+      <section class="features">
+        <article class="feature">
+          <img src="" alt="" class="img">
+            <h3>lorem2</h3>
+            <p class="smth">lorem5</p>
+          </img>
+        </article>
+        <article class="feature">
+          <img src="" alt="" class="img">
+            <h3>lorem2</h3>
+            <p class="smth">lorem5</p>
+          </img>
+        </article>
+        <article class="feature">
+          <img src="" alt="" class="img">
+            <h3>lorem2</h3>
+            <p class="smth">lorem5</p>
+          </img>
+        </article>
+        <article class="feature">
+          <img src="" alt="" class="img">
+            <h3>lorem2</h3>
+            <p class="smth">lorem5</p>
+          </img>
+        </article>
+      </section>
+      <section class="catalog">
+        <h2>catalog</h2>
+        <section class="grid">
+          <article class="item"></article>
+          <article class="item"></article>
+          <article class="item"></article>
+          <article class="item"></article>
+          <article class="item"></article>
+          <article class="item"></article>
+        </section>
       </section>
     </main>
     <script src="./scripts/script.js"></script>

@@ -1,4 +1,6 @@
 header {
+  position: fixed;
+  top: 0;
   width: 100%;
   display: flex;
   align-items: center;
@@ -9,13 +11,13 @@ header {
   background-color: var(--cream);
 }
 
-nav {
+.navbar{
   display: flex;
   align-items: center;
   column-gap: 4rem;
 }
 
-li a {
+.nav-link a {
   font-size: 1.2rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -23,23 +25,23 @@ li a {
   transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
-li a.active {
+.nav-link a.active {
   font-weight: 600;
   color: var(--dbrown);
 }
 
-li:hover a {
+.nav-link:hover a {
   color: var(--dbrown);
 }
 
-.logo {
+.nav-logo {
   width: 150px;
   height: auto;
   object-fit: cover;
   object-position: center;
 }
 
-a button {
+a .nav-cta {
   padding: 4px 16px;
   font-size: 1rem;
   font-weight: 500;
@@ -52,12 +54,12 @@ a button {
   transition: color 0.3s ease, background-color 0.3s linear, border-color 0.3s ease;
 }
 
-button:hover {
+.nav-cta:hover {
   border-color: var(--dbrown);
   color: var(--dbrown);
 }
 
-button:active, button:focus {
+.nav-cta:active, button:focus {
   border-color: var(--lbrown);
   color: var(--cream);
   background-color: var(--lbrown);

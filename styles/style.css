@@ -17,5 +17,22 @@ html,
 body {
   height: 100%;
   width: 100%;
+  color: var(--lbrown);
+  background: var(--cream);
 }
 
+html {
+  font-size: 16px;
+}
+
+:root {
+  --black: #1F1B18;
+  --dbrown: #3A2418;
+  --lbrown: #5F3B2C;
+  --cream: #F4E8D5;
+}
+
+@font-face {
+  font-family: 'windhavi';
+  src: url('./assets/fonts/windhavi.regular.otf');
+}

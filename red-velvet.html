@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>चmaa</title>
+    <title>Red Velvet Brownie | चmaa</title>
     <link rel="shortcut icon" href="./assets/images/Square Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/item.css">
+    <link rel="stylesheet" href="./styles/red-velvet.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
   </head>
@@ -31,24 +31,28 @@
     <main>
       <section class="hero">
         <article class="left-hero hero-container">
-          <img src="./assets/images/Square Logo.png" alt="hero image" class="hero-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKIt9CtMu4xc-SSS4yib7Wadx7fW1g1JEbhxCqXs-DgbP1oHQWVCMYBSDR&s=10" alt="red velvet brownie">
         </article>
         <article class="right-hero hero-container">
-          <h2 class="heading">brownies</h2>
-          <p class="tagline">delicious</p>
-          <p class="price">Rs 200</p>
+          <div class="upr">
+            <h2 class="heading">red velvet brownie</h2>
+            <p class="tagline">blood red brownie</p>
+            <p class="price">Rs 250</p>
+          </div>
+          <div class="lwr">
+            <p class="info"><i class="ri-information-line"></i> Minimum order requried is 10 pieces.</p>
+            <div class="cart">
+              <i>-</i>
+              <p>10</p>
+              <i>+</i>
+            </div>
+            <a href="./catalog.html">
+              <button class="nav-cta">buy now</button>
+            </a>
+          </div>
         </article>
       </section>
     </main>
-    <script>
-      let itemImage = document.querySelector("hero-image");
-      let itemName = document.querySelector("heading");
-      let itemTagline = document.querySelector("tagline");
-      let itemPrice = document.querySelector("price");
-      itemImage.innerHTML= localStorage.getItem("image");
-      itemName.textContent= localStorage.getItem("name");
-      itemTagline.textContent= localStorage.getItem("description");
-      itemPrice.textContent= localStorage.getItem("price");
-    </script>
+    <script src="./scripts/item.js"></script>
   </body>
 </html>

@@ -7,9 +7,45 @@ main {
 
 article {
   width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-section {
-  height: 100px;
-  border: 1px solid var(--dbrown);
+details, section {
+  width: 100%;
+  border-left: 1px solid var(--dbrown);
+  border-right: 1px solid var(--dbrown);
+}
+
+section:first-child {
+  border-top: 1px solid var(--dbrown);
+}
+
+section:not(:first-child) {
+  border-top: 1px solid var(--dbrown);
+}
+
+summary, p, h2 {
+  padding: 8px;
+}
+
+h2 {
+  border-bottom: 1px solid var(--dbrown);
+}
+
+summary, h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--dbrown);
+}
+
+p {
+  font-size: 24px;
+  color: var(--lbrown);
+}
+
+p:last-child {
+  border-bottom: 1px solid var(--dbrown);
 }

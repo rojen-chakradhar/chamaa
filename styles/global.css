@@ -7,7 +7,7 @@
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
-  outline: 1px dotted red;
+  /* outline: 1px dotted red; */
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -35,4 +35,20 @@ html {
 @font-face {
   font-family: 'windhavi';
   src: url('./assets/fonts/windhavi.regular.otf');
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  border-left: 1px solid var(--dbrown);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--lbrown);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--dbrown);
 }

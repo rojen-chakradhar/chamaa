@@ -1,0 +1,42 @@
+.upper-footer {
+  border-top: 1px solid var(--dbrown);
+  padding: 32px 5rem;
+	display: flex;
+	width: 100%;
+}
+
+.logo-div {
+	flex: 1;
+}
+
+.logo-div p {
+	margin-top: 8px;
+}
+
+.logo-div p i {
+  font-size: 16px;
+}
+
+.logo-div p a {
+	font-size: 16px;
+	text-transform: lowercase;
+	text-decoration: underline;
+	color: var(--lbrown);
+}
+
+.navs {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.navs nav {
+	display: flex;
+	flex-direction: column;
+	row-gap: 16px;
+}
+
+.lower-footer {
+	padding-bottom: 24px;
+	text-align: center;
+}

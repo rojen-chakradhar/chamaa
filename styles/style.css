@@ -38,7 +38,7 @@
 
 .hero-image {
   height: 250px;
-  width: 100%;
+  width: 80%;
   background-color: var(--lbrown);
   background-image: url("https://hips.hearstapps.com/ghk.h-cdn.co/assets/18/01/3200x1600/landscape-1514925232-fudgy-beet-brownies-index-ghk-0118.jpg?resize=1200:*");
   background-position: center;
@@ -107,7 +107,7 @@
 }
 
 .catalog {
-  min-height: 100dvh;
+  min-height: max-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -116,11 +116,14 @@
 
 .catalog h2 {
   margin-bottom: 48px;
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 5rem;
 }

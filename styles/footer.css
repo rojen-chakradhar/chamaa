@@ -1,8 +1,8 @@
 .upper-footer {
-  border-top: 1px solid var(--dbrown);
-  padding: 32px 5rem;
-	display: flex;
 	width: 100%;
+	display: flex;
+	padding: 32px 5rem;
+  border-top: 1px solid var(--dbrown);
 }
 
 .logo-div {
@@ -14,14 +14,20 @@
 }
 
 .logo-div p i {
-  font-size: 16px;
+	font-size: 16px;
 }
 
 .logo-div p a {
 	font-size: 16px;
+	font-weight: 500;
 	text-transform: lowercase;
 	text-decoration: underline;
 	color: var(--lbrown);
+	transition: color 0.3s ease;
+}
+
+.logo-div p:hover a {
+	color: var(--dbrown);
 }
 
 .navs {
@@ -37,6 +43,8 @@
 }
 
 .lower-footer {
-	padding-bottom: 24px;
+	padding: 8px 0;
 	text-align: center;
+	text-transform: capitalize;
+  border-top: 1px solid var(--dbrown);
 }

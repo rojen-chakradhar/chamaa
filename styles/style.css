@@ -54,21 +54,40 @@
   flex-direction: column-reverse;
 }
 
+.text {
+  margin: 8px 0;
+}
+
 .text h3 {
   font-size: 24px;
   font-weight: 500;
+  line-height: 1.2;
   text-transform: capitalize;
 }
 
 .text p {
   font-size: 16px;
   font-weight: 400;
+  line-height: 1;
 }
 
 .img {
   width: 200px;
   aspect-ratio: 1 / 1.5;
   border: 1px solid var(--dbrown);
+  overflow: hidden;
+}
+
+.img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.img img:hover {
+  transform: scale(1.1);
 }
 
 .catalog {
@@ -81,16 +100,6 @@
 
 .catalog h2 {
   margin-bottom: 48px;
-}
-
-.item {
-  height: 200px;
-  aspect-ratio: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--dbrown);
 }
 
 .grid {

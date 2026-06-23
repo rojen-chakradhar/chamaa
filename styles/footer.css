@@ -34,12 +34,17 @@
 	flex: 1;
 	display: flex;
 	justify-content: center;
+	column-gap: 92px;
 }
 
 .navs nav {
 	display: flex;
 	flex-direction: column;
-	row-gap: 16px;
+	row-gap: 24px;
+}
+
+.navs nav li a {
+	font-size: 16px;
 }
 
 .lower-footer {
@@ -47,4 +52,16 @@
 	text-align: center;
 	text-transform: capitalize;
   border-top: 1px solid var(--dbrown);
+}
+
+.lower-footer p {
+	font-size: 16px;
+	color: var(--dbrown);
+}
+
+.lower-footer p a {
+	font-size: 16px;
+	font-weight: 500;
+	text-decoration: underline;
+	color: var(--lbrown);
 }

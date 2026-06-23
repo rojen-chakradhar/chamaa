@@ -9,11 +9,20 @@
 }
 
 .heading {
+  display: flex;
+  align-items: center;
   font-size: 96px;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
   color: var(--dbrown);
+}
+
+.heading img {
+  height: 120px;
+  width: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 .heading span:first-child {

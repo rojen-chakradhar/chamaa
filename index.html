@@ -93,31 +93,55 @@
         </article>
       </section>
     </main>
-    <footer id="footer">
-      <div class="upper-footer">
-        <div class="logo-div">
-          <img src="./assets/images/Horizontal Logo.png" alt="logo">
-          <p class="location"><i class="ri-map-pin-line"></i> <a href="https://maps.app.goo.gl/koEbnJyvSCDm7bGK9" target="_blank">madhyapur thimi, bhaktapur</a></p>
-          <p class="email"><i class="ri-mail-line"></i> <a href="mailto:rojenchakradhar72@gmail.com">rojenchakradhar72@gmail.com</a></p>
-          <p class="pnumber"><i class="ri-phone-line"></i> <a href="tel:+9779746428695">+977-9746428695</a></p>
-        </div>
-        <div class="navs">
-          <nav>
-            <li class="nav-link"><a href="./index.html#" class="active">home</a></li>
-            <li class="nav-link"><a href="./about.html">about</a></li>
-            <li class="nav-link"><a href="./catalog.html">catalog</a></li>
-            <li class="nav-link"><a href="./services.html">services</a></li>
-          </nav>
-          <nav>
-            <li class="nav-link"><a href="./faq.html">faq</a></li>
-            <li class="nav-link"><a href="./privacy-policy.html">privacy policy</a>
-            <li class="nav-link"><a href="./terms-and-condition.html">terms and conditions</a>
-          </nav>
-        </div>
-      </div>
-      <div class="lower-footer">
-        <p>Made by <a href="https://www.rojen.name.np" target="_blank">Rojen Chakradhar</a></p>
-      </div>
+    <footer id="footer" class="footer">
+      <article id="order" class="u-footer">
+        <section class="f-container f-text">
+          <h2 class="f-heading">Ready when you are</h2>
+          <p class="f-info">Send us your details and we'll comfirm everything over WhatsApp. Most orders are confirmed within a few hours on business days.</p>
+          <p class="f-info">We'll devliver across the Kathmandu Valley - Kathmandu, Lalitpur, and Bhaktapur districts.</p>
+          <div class="min-order-info">
+            <p class="order-info">Minimum 10 pieces per order.</p>
+          </div>
+        </section>
+        <section class="f-container f-form">
+          <form class="order-form" id="orderForm">
+            <div class="input-wrapper">
+              <label for="username">Your Name</label>
+              <input type="text" name="username" id="userName" placeholder="Full Name" required>
+            </div>
+            <div class="input-wrapper">
+              <label for="phoneNumber">Phone / WhatsApp</label>
+              <input type="number" name="phoneNumber" id="phoneNumber" placeholder="98********" required>
+            </div>
+            <div class="input-wrapper">
+              <label for="order">Order</label>
+              <input type="text" name="order" id="order" placeholder="Choose a brownie" required>
+            </div>
+            <div class="input-wrapper">
+              <label for="address">delivery area</label>
+              <input type="text" name="order" id="address" placeholder="Eg. Madhyapur thimi, Garcha" required>
+            </div>
+            <div class="input-wrapper">
+              <label for="notes">notes (optional)</label>
+              <input type="text" name="notes" id="notes" placeholder="Occasion, Specific time, dietary notes, combination breakdown...">
+            </div>
+            <button type="submit" class="cta order-btn">send order request</button>
+          </form>
+        </section>
+      </article>
+      <article class="l-footer">
+        <section class="f-logo-container">
+          <img class="f-logo" src="./assets/images/Horizontal Logo.png" alt="logo">
+          <p class="f-tagline">Deivery Only in Kathmandu Valley</p>
+        </section>
+        <nav class="f-nav">
+          <a href="./index.html#aboutus"><p class="f-nav-link">about us</p></a>
+          <a href="./index.html#menu"><p class="f-nav-link">menu</p></a>
+          <a href="./index.html#faq"><p class="f-nav-link">faq</p></a>
+          <a href="./index.html#order"><p class="f-nav-link">order</p></a>
+          <a href="https://www.instagram.com/" target="_blank"><p class="f-nav-link">instagram</p></a>
+        </nav>
+      </article>
     </footer>
     <script src="./scripts/script.js"></script>
   </body>

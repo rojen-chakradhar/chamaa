@@ -1,67 +1,66 @@
-header {
+.header {
   position: fixed;
   top: 0;
+  height: max-content;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 5rem;
-  padding: 16px 24px;
-  border-bottom: 1px solid var(--dbrown);
+  padding: 0.5rem 5rem;
+  border-bottom: var(--dborder);
   background-color: var(--cream);
   z-index: 1000;
+}
+
+.h-wrapper {
+  height: 100%;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  width: 6rem;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 .navbar{
   display: flex;
   align-items: center;
-  column-gap: 4rem;
+  column-gap: 2rem;
 }
 
-.nav-link a {
-  font-size: 1.2rem;
+.nav-link {
+  font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
   color: var(--lbrown);
   transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
-.nav-link a.active {
-  font-weight: 600;
+a:hover .nav-link {
   color: var(--dbrown);
 }
 
-.nav-link:hover a {
-  color: var(--dbrown);
-}
-
-.nav-logo {
-  width: 150px;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
-}
-
-a .nav-cta {
-  padding: 4px 16px;
+.nav-cta {
   font-size: 1rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  border: 1px solid var(--lbrown);
-  border-radius: 24px;
-  color: var(--lbrown);
-  background-color: var(--cream);
-  cursor: pointer;
-  transition: color 0.3s ease, background-color 0.3s linear, border-color 0.3s ease;
+  border-radius: 0;
+  color: var(--cream);
+  background-color: var(--lbrown);
 }
 
 .nav-cta:hover {
   border-color: var(--dbrown);
-  color: var(--dbrown);
+  color: var(--cream);
+  background-color: var(--dbrown);
 }
 
-.nav-cta:active, button:focus {
-  border-color: var(--lbrown);
+.nav-cta:active {
+  border-color: var(--dbrown);
   color: var(--cream);
-  background-color: var(--lbrown);
+  background-color: var(--dbrown);
 }

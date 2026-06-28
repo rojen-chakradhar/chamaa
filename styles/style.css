@@ -2,16 +2,16 @@
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
-  gap: 38px;
+  gap: 2.5rem;
   align-items: center;
   justify-content: center;
-  padding: 0 24px;
+  padding: 0 2rem;
 }
 
 .heading {
   display: flex;
   align-items: center;
-  font-size: 96px;
+  font-size: 7rem;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
@@ -19,26 +19,14 @@
 }
 
 .heading img {
-  height: 120px;
+  height: 8.5rem;
   width: auto;
   object-fit: cover;
   object-position: center;
 }
 
-.heading span:first-child {
-  font-size: 135px;
-  text-transform: lowercase;
-  font-family: 'windhavi', serif;
-  color: var(--lbrown);
-}
-
-.heading span:last-child {
-  font-weight: 600;
-  color: var(--lbrown);
-}
-
 .tagline {
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: 500;
   text-transform: capitalize;
   text-align: center;
@@ -46,16 +34,6 @@
 }
 
 /* .hero-image {
-  height: 250px;
-  width: 100%;
-  background-color: var(--lbrown);
-  background-image: url("https://hips.hearstapps.com/ghk.h-cdn.co/assets/18/01/3200x1600/landscape-1514925232-fudgy-beet-brownies-index-ghk-0118.jpg?resize=1200:*");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
-.hero-image {
   width: 100%;
   height: 250px;
   display: flex;
@@ -68,58 +46,56 @@
   height: 250px;
   object-fit: cover;
   object-position: center;
-}
+} */
 
-.features {
+.brownies {
   display: flex;
   justify-content: center;
-  gap: 48px;
-  padding: 60px 0;
+  column-gap: 3.5rem;
 }
 
-.feature {
+.brownie {
   display: flex;
   flex-direction: column;
+  row-gap: 0.5rem;
 }
 
-.feature:nth-child(odd) {
-  margin-top: 96px;
+.brownie:nth-child(odd) {
+  margin-top: 7rem;
   flex-direction: column-reverse;
 }
 
-.text {
-  margin: 8px 0;
-}
-
-.text h3 {
-  font-size: 24px;
+.b-heading {
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.2;
   text-transform: capitalize;
 }
 
-.text p {
-  font-size: 16px;
+.b-tagline {
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1;
 }
 
-.img {
+.b-img {
   width: 200px;
+  height: auto;
   aspect-ratio: 1 / 1.5;
-  border: 1px solid var(--dbrown);
+  border: var(--dborder);
   overflow: hidden;
 }
 
-.img img {
+.b-img img {
   height: 100%;
   width: 100%;
+  image-rendering: optimizeSpeed;
   object-fit: cover;
   object-position: center;
   transition: transform 0.3s ease;
 }
 
-.img img:hover {
+.b-img img:hover {
   transform: scale(1.1);
 }
 
@@ -128,6 +104,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 60px;
   padding: 60px 0;
   border-top: 1px solid var(--dbrown);
 }

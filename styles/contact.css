@@ -1,0 +1,85 @@
+.contact {
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-wrapper {
+  height: 100%;
+  width: 100%;
+  max-width: 1440px;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5rem;
+  padding: 32px 5rem;
+	border-top: 1px solid var(--dborder);
+}
+
+.c-text-wrapper {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.c-heading {
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 1.2;
+	color: var(--dbrown);
+}
+
+.c-info {
+	margin-top: 24px;
+	font-size: 16px;
+	line-height: 1;
+	color: var(--lbrown);
+}
+
+.min-o-info {
+	max-width: max-content;
+	margin-top: 24px;
+	border: 1px solid var(--lbrown);
+	padding: 8px;
+}
+
+.o-info {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1;
+	color: var(--dbrown);
+}
+
+.o-form {
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+}
+
+.i-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.o-form input:not([type="button"]) {
+	padding: 4px 8px;
+	font-size: 16px;
+	border: none;
+	border-bottom: 1px solid var(--dbrown);
+	color: var(--lbrown);
+	background-color: var(--cream);
+}
+
+.o-form input:focus {
+	outline: none;
+}
+
+.o-form input::placeholder {
+	color: var(--lbrown);
+}
+
+.o-btn {
+	margin-top: 16px;
+}

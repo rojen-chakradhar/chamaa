@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/item.css">
+    <link rel="stylesheet" href="./styles/contact.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
   </head>
@@ -85,36 +86,36 @@
         <h2 class="m-heading">menu</h2>
         <article class="menu-grid" id="menuGrid"></article>
       </section>
-      <section id="contact" class="contact">
-        <article id="order" class="u-footer">
-          <section class="f-container f-text">
-          <h2 class="f-heading">Ready when you are</h2>
-          <p class="f-info">Send us your details and we'll comfirm everything over WhatsApp. Most orders are confirmed within a few hours on business days.</p>
-          <p class="f-info">We'll devliver across the Kathmandu Valley - Kathmandu, Lalitpur, and Bhaktapur districts.</p>
-          <div class="min-order-info">
-            <p class="order-info">Minimum 10 pieces per order.</p>
-          </div>
+      <section id="order" class="contact">
+        <article class="c-wrapper">
+          <section class="c-text-wrapper">
+            <h2 class="c-heading">Ready when you are</h2>
+            <p class="c-info">Send us your details and we'll comfirm everything over WhatsApp. Most orders are confirmed within a few hours on business days.</p>
+            <p class="c-info">We'll devliver across the Kathmandu Valley - Kathmandu, Lalitpur, and Bhaktapur districts.</p>
+            <div class="min-o-info">
+              <p class="o-info">Minimum 10 pieces per order.</p>
+            </div>
           </section>
-          <section class="f-container f-form">
-            <form class="order-form" id="orderForm">
-              <div class="input-wrapper">
-                <label for="username">Your Name</label>
+          <section class="c-form-wrapper c-form">
+            <form class="o-form" id="orderForm">
+              <div class="i-wrapper">
+                <label class="i-label" for="username">Your Name</label>
                 <input type="text" name="username" id="userName" placeholder="Full Name" required>
               </div>
-              <div class="input-wrapper">
-                <label for="phoneNumber">Phone / WhatsApp</label>
+              <div class="i-wrapper">
+                <label class="i-label" for="phoneNumber">Phone / WhatsApp</label>
                 <input type="number" name="phoneNumber" id="phoneNumber" placeholder="98********" required>
               </div>
-              <div class="input-wrapper">
-                <label for="order">Order</label>
+              <div class="i-wrapper">
+                <label class="i-label" for="order">Order</label>
                 <input type="text" name="order" id="order" placeholder="Choose a brownie" required>
               </div>
-              <div class="input-wrapper">
-                <label for="address">delivery area</label>
+              <div class="i-wrapper">
+                <label class="i-label" for="address">delivery area</label>
                 <input type="text" name="order" id="address" placeholder="Eg. Madhyapur thimi, Garcha" required>
               </div>
-              <div class="input-wrapper">
-                <label for="notes">notes (optional)</label>
+              <div class="i-wrapper">
+                <label class="i-label" for="notes">notes (optional)</label>
                 <input type="text" name="notes" id="notes" placeholder="Occasion, Specific time, dietary notes, combination breakdown...">
               </div>
               <button type="submit" class="cta order-btn">send order request</button>

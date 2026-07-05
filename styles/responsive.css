@@ -1,0 +1,12 @@
+@media screen and (max-width: 600px) {
+  .nav-logo {
+    width: 10rem;
+  }
+  .nav-link, .nav-cta {
+    font-size: 1.5rem;
+  }
+  .nav-link {
+    display: none;
+    flex-direction: column;
+  }
+}

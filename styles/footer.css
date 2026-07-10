@@ -1,50 +1,51 @@
-.upper-footer {
+.footer {
+	height: 15dvh;
 	width: 100%;
 	display: flex;
-	padding: 32px 5rem;
-  border-top: 1px solid var(--dbrown);
+	justify-content: center;
+	padding: 2.5rem 5rem;
+  border-top: 1px solid var(--dborder);
+	background-color: var(--cream);
 }
 
-.logo-div {
-	flex: 1;
+.f-wrapper {
+	height: 100%;
+	width: 100%;
+	max-width: 1440px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.logo-div p {
-	margin-top: 8px;
+.f-logo {
+	height: auto;
+	width: 100px;
+	image-rendering: optimizeSpeed;
+	object-fit: cover;
+	object-position: center;
 }
 
-.logo-div p i {
+.f-tagline {
 	font-size: 16px;
+	line-height: 1;
+	color: var(--lbrown);
 }
 
-.logo-div p a {
+.f-nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	column-gap: 24px;
+}
+
+.f-nav-link {
 	font-size: 16px;
 	font-weight: 500;
-	text-transform: lowercase;
-	text-decoration: underline;
-	color: var(--lbrown);
-	transition: color 0.3s ease;
-}
-
-.logo-div p:hover a {
-	color: var(--dbrown);
-}
-
-.navs {
-	flex: 1;
-	display: flex;
-	justify-content: center;
-}
-
-.navs nav {
-	display: flex;
-	flex-direction: column;
-	row-gap: 16px;
-}
-
-.lower-footer {
-	padding: 8px 0;
-	text-align: center;
 	text-transform: capitalize;
-  border-top: 1px solid var(--dbrown);
+	line-height: 1;
+	color: var(--lbrown);
+}
+
+.f-nav-link:hover {
+	color: var(--dbrown);
 }

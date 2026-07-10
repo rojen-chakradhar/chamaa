@@ -22,7 +22,7 @@ body {
 }
 
 html {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 :root {
@@ -30,6 +30,8 @@ html {
   --dbrown: #3A2418;
   --lbrown: #5F3B2C;
   --cream: #F4E8D5;
+  --dborder: 1px solid var(--dbrown);
+  --lborder: 1px solid var(--lbrown);
 }
 
 @font-face {
@@ -51,4 +53,37 @@ html {
 ::-webkit-scrollbar-thumb:hover,
 ::-webkit-scrollbar-thumb:active {
   background-color: var(--dbrown);
+}
+
+::selection {
+  color: var(--cream);
+  background-color: var(--lbrown);
+}
+
+.cta {
+  padding: 0.3rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: var(--lborder);
+  border-radius: 24px;
+  color: var(--lbrown);
+  background-color: var(--cream);
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s linear, border-color 0.3s ease;
+}
+
+.cta:hover {
+  border-color: var(--dbrown);
+  color: var(--dbrown);
+}
+
+.cta:active {
+  border-color: var(--lbrown);
+  color: var(--cream);
+  background-color: var(--lbrown);
+}
+
+a:focus {
+  outline: 1px dotted var(--dbrown);
 }

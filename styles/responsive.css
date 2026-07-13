@@ -9,4 +9,8 @@
     display: none;
     flex-direction: column;
   }
+.heading {
+  font-size: 2.4rem;
+  /* font-size:  clamp(2.4rem, 7rem, 14rem); */
+}
 }

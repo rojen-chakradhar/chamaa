@@ -5,13 +5,14 @@
   gap: 2.5rem;
   align-items: center;
   justify-content: center;
-  padding: 0 2rem;
 }
 
 .heading {
   display: flex;
   align-items: center;
-  font-size: 7rem;
+  gap: 1rem;
+  /* font-size: 7rem; */
+  font-size:  clamp(2.4rem, 7rem, 14rem);
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
@@ -19,7 +20,8 @@
 }
 
 .heading img {
-  height: 8.5rem;
+  /* height: 5rem; */
+  height: 0.7em;
   width: auto;
   object-fit: cover;
   object-position: center;

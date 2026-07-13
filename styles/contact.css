@@ -52,6 +52,10 @@
 	color: var(--dbrown);
 }
 
+.c-form-wrapper {
+	flex: 1;
+}
+
 .o-form {
 	display: flex;
 	flex-direction: column;

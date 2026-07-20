@@ -1,4 +1,4 @@
-const variety = [
+const menu = [
   {
     name: "Special Brownie",
     desc: "best",
@@ -43,8 +43,8 @@ const variety = [
   }
 ];
 
-let grid = document.querySelector("#menuGrid");
-variety.forEach(type => {
+const grid = document.querySelector("#menuGrid");
+menu.forEach(type => {
   grid.innerHTML += `
   <a href="./${type.src}.html">
     <div class="m-item">
@@ -57,3 +57,10 @@ variety.forEach(type => {
     </div>
   </a>`;
 });
+
+const userName = document.querySelector("#userName");
+const phoneNumber = document.querySelector("#phoneNumber");
+const userName = document.querySelector("#order");
+const userAddress = document.querySelector("#address");
+const orderNotes = document.querySelector("#notes");
+const orderBtn = document.querySelector("#orderBtn");

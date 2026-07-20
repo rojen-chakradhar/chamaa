@@ -45,9 +45,9 @@ const menu = [
 
 const grid = document.querySelector("#menuGrid");
 menu.forEach(type => {
+  // <a href="./${type.src}.html">
   grid.innerHTML += `
-  <a href="./${type.src}.html">
-    <div class="m-item">
+    <div class="m-item" ${onclick="addToCart(type.src, type.name, 1)"}>
       <img src="${type.image}" class="m-img" loading="lazy" alt="${type.name}'s image">
       <h3 class="m-title">${type.name}</h3>
       <div class="m-item-bottom">
@@ -55,12 +55,30 @@ menu.forEach(type => {
         <i class="ri-shopping-cart-line m-icon"></i>
       </div>
     </div>
-  </a>`;
-});
+    `;
+    // </a>
+  });
+function addToCart(itemSrc, itemName, num) {
+  localStorage.setItem(`${itemSrc}`, `${itemName}`);
+  console.log(num)
+}
 
 const userName = document.querySelector("#userName");
 const phoneNumber = document.querySelector("#phoneNumber");
-const userName = document.querySelector("#order");
+const userOrder = document.querySelector("#order");
 const userAddress = document.querySelector("#address");
 const orderNotes = document.querySelector("#notes");
 const orderBtn = document.querySelector("#orderBtn");
+document.querySelector("#orderForm").addEventListener('submit', (event) => {
+  event.preventDefault();
+});
+orderBtn.addEventListener('click', () => {
+  localStorage.setItem('user name', `${userName.value}`);
+  localStorage.setItem('phone number', `${phoneNumber.value}`);
+  localStorage.setItem('address', `${userAddress.value}`);
+  userName.value = "";
+  phoneNumber.value = "";
+  userOrder.value = "";
+  userAddress.value = "";
+  orderNotes.value = "";
+});

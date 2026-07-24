@@ -100,20 +100,24 @@
           <section class="c-form-wrapper c-form">
             <form class="o-form" id="orderForm">
               <div class="i-wrapper">
-                <label class="i-label" for="username">Your Name</label>
+                <label class="i-label" for="username">your name</label>
                 <input type="text" name="username" id="userName" placeholder="Full Name" required>
               </div>
               <div class="i-wrapper">
-                <label class="i-label" for="phoneNumber">Phone / WhatsApp</label>
+                <label class="i-label" for="phoneNumber">phone / whatsApp number</label>
                 <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="98********" required>
               </div>
               <div class="i-wrapper">
-                <label class="i-label" for="order">Order</label>
+                <label class="i-label" for="order">order</label>
                 <!-- <input type="text" name="order" id="order" placeholder="Choose a brownie" required> -->
                 <textarea name="order" id="order" placeholder="Choose a brownie" required></textarea>
+                <div class="total-wrapper">
+                  <p class="o-total">Total Pieces: <span id="totalPiecesText"></span></p>
+                  <p class="o-total">Total Price: <span id="totalPriceText">Rs 0</span></p>
+                </div>
               </div>
               <div class="i-wrapper">
-                <label class="i-label" for="address">delivery area</label>
+                <label class="i-label" for="address">delivery address</label>
                 <input type="text" name="order" id="address" placeholder="Eg. Madhyapur thimi, Garcha" required>
               </div>
               <div class="i-wrapper">

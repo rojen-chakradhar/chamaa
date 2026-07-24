@@ -67,6 +67,10 @@
 	flex-direction: column;
 }
 
+.i-label {
+	text-transform: capitalize;
+}
+
 .o-form input:not([type="button"]) {
 	padding: 4px 8px;
 	padding-left: 0;
@@ -83,6 +87,39 @@
 
 .o-form input::placeholder {
 	color: var(--lbrown);
+}
+
+.o-form textarea {
+	min-height: 35px;
+	height: 35px;
+	padding: 4px 8px;
+	padding-left: 0;
+	font-size: 16px;
+	border: none;
+	border-bottom: 1px solid var(--dbrown);
+	color: var(--lbrown);
+	background-color: var(--cream);
+	resize: none;
+	overflow: hidden;
+}
+
+.o-form textarea:focus {
+	outline: none;
+}
+
+.o-form textarea::placeholder {
+	color: var(--lbrown);
+}
+
+.total-wrapper {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.o-total {
+	font-size: 16px;
 }
 
 .o-btn {

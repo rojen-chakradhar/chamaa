@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>चmaa</title>
+    <title>चmaa - Best Cookies ITW</title>
     <link rel="shortcut icon" href="./assets/svgs/l-favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/header.css">
@@ -87,7 +87,7 @@
         <h2 class="m-heading">menu</h2>
         <article class="menu-grid" id="menuGrid"></article>
       </section>
-      <section id="order" class="contact">
+      <section id="contact" class="contact">
         <article class="c-wrapper">
           <section class="c-text-wrapper">
             <h2 class="c-heading">Ready when you are</h2>
@@ -100,26 +100,31 @@
           <section class="c-form-wrapper c-form">
             <form class="o-form" id="orderForm">
               <div class="i-wrapper">
-                <label class="i-label" for="username">Your Name</label>
+                <label class="i-label" for="username">your name</label>
                 <input type="text" name="username" id="userName" placeholder="Full Name" required>
               </div>
               <div class="i-wrapper">
-                <label class="i-label" for="phoneNumber">Phone / WhatsApp</label>
-                <input type="number" name="phoneNumber" id="phoneNumber" placeholder="98********" required>
+                <label class="i-label" for="phoneNumber">phone / whatsApp number</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="98********" required>
               </div>
               <div class="i-wrapper">
-                <label class="i-label" for="order">Order</label>
-                <input type="text" name="order" id="order" placeholder="Choose a brownie" required>
+                <label class="i-label" for="order">order</label>
+                <!-- <input type="text" name="order" id="order" placeholder="Choose a brownie" required> -->
+                <textarea name="order" id="order" placeholder="Choose a brownie" required></textarea>
+                <div class="total-wrapper">
+                  <p class="o-total">Total Pieces: <span id="totalPiecesText"></span></p>
+                  <p class="o-total">Total Price: <span id="totalPriceText">Rs 0</span></p>
+                </div>
               </div>
               <div class="i-wrapper">
-                <label class="i-label" for="address">delivery area</label>
+                <label class="i-label" for="address">delivery address</label>
                 <input type="text" name="order" id="address" placeholder="Eg. Madhyapur thimi, Garcha" required>
               </div>
               <div class="i-wrapper">
                 <label class="i-label" for="notes">notes (optional)</label>
                 <input type="text" name="notes" id="notes" placeholder="Occasion, Specific time, dietary notes, combination breakdown...">
               </div>
-              <button type="submit" class="cta order-btn">send order request</button>
+              <button type="submit" class="cta order-btn" id="orderBtn">send order request</button>
             </form>
           </section>
         </article>

@@ -63,7 +63,6 @@ grid.innerHTML = menu.map(item => `
     <button class="m-btn cta" data-src="${item.src}">add to cart</button>
   </div>
 `).join("");
-/* <i class="ri-shopping-cart-line m-icon" data-src="${item.src}"></i> */
 
 grid.addEventListener("click", (e) => {
   const icon = e.target.closest(".m-icon");

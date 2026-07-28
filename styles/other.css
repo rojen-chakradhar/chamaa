@@ -1,4 +1,4 @@
-main > section > ul > li{
+main section ul li{
   list-style: initial;
 }
 
@@ -14,7 +14,7 @@ main {
   position: static;
 }
 
-main > section {
+main section {
   width: 100%;
   max-width: 1440px;
   padding: 1rem 0;
@@ -31,7 +31,7 @@ h1 {
   margin-top: 1rem;
 }
 
-p > img {
+p img {
   height: 12px;
   width: auto;
   object-fit: cover;
@@ -45,7 +45,7 @@ h2 {
   color: var(--dbrown);
 }
 
-main > section > p {
+main section p {
   font-size: 1.2rem;
   font-weight: 400;
   text-wrap-style: balance;
@@ -56,12 +56,12 @@ main > section > p {
   font-size: 1rem;
 }
 
-.date > b {
+.date b {
   font-weight: 500;
   text-transform: capitalize;
 }
 
-main > section > ul {
+main section ul {
   padding-left: 1.5rem;
   text-transform: capitalize;
   font-size: 1.2rem;

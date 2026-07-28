@@ -68,3 +68,7 @@ ul {
   font-weight: 400;
   color: var(--lbrown);
 }
+
+.no-c {
+  text-transform: none;
+}

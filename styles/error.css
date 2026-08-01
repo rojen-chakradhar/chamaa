@@ -7,7 +7,7 @@ main {
   justify-content: center;
 }
 
-main section {
+.error-hero {
   height: 100%;
   width: 100%;
   max-width: 1440px;
@@ -20,9 +20,13 @@ h1 {
   color: var(--dbrown);
 }
 
-main section p {
+.error-hero p {
   font-size: 2.5rem;
   font-weight: 400;
   line-height: 1.2;
   color: var(--lbrown);
+}
+
+.error-hero .cta {
+  margin-top: 2rem;
 }

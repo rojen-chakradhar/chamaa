@@ -32,10 +32,11 @@
 }
 
 .f-nav {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	column-gap: 24px;
+	display: grid;
+	column-gap: 40px;
+	row-gap: 20px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
 }
 
 .f-nav-link {

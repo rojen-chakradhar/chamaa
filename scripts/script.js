@@ -54,10 +54,13 @@ grid.innerHTML = menu.map(item => `
   <div class="m-item">
     <img src="${item.image}" class="m-img" loading="lazy" alt="${item.name}">
     <h3 class="m-title">${item.name}</h3>
-    <div class="m-item-bottom">
-      <p class="m-price">Rs ${item.price}</p>
-      <i class="ri-shopping-cart-line m-icon" data-src="${item.src}"></i>
+    <p class="m-price">Rs ${item.price} / 10 pieces</p>
+    <div class="m-item-a">
+      <i class="ri-subtract-line m-icon"></i>
+      <p class="m-num">10</p>
+      <i class="ri-add-line m-icon"></i>
     </div>
+    <button class="m-btn cta" data-src="${item.src}">add to cart</button>
   </div>
 `).join("");
 

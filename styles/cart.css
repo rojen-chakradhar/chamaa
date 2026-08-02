@@ -1,0 +1,35 @@
+.cart {
+  position: absolute;
+  bottom: 6rem;
+  right: 1rem;
+  /* display: none; */
+  min-height: 60dvh;
+  width: 25dvw;
+  border: var(--lborder);
+  background-color: var(--cream);
+  z-index: 100;
+  animation: popup 1s cubic-bezier(1, 0, 0, 1);
+}
+
+.popup-ani {
+  animation-fill-mode: forwards;
+}
+
+.popdown-ani {
+  animation-fill-mode: backwards;
+}
+
+.cart-icon {
+  position: sticky;
+  top: 90%;
+  left: 95%;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  border: var(--lborder);
+  border-radius: 50%;
+  color: var(--lbrown);
+  background-color: var(--cream);
+  z-index: 1001;
+  cursor: pointer;
+}

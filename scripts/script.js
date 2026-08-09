@@ -50,7 +50,6 @@ const menu = [
 ];
 
 const grid = document.querySelector("#menuGrid");
-// Each item quantity is in pieces. Price in menu is for 10 pieces. Enforce min 10 pieces and step of 10.
 const MIN_PIECES = 10;
 const STEP = 10;
 
@@ -68,7 +67,6 @@ grid.innerHTML = menu.map(item => `
   </div>
 `).join("");
 
-// Handle quantity +/- and Add to Cart
 grid.addEventListener("click", (e) => {
   const icon = e.target.closest(".m-icon");
   if (icon) {
@@ -114,8 +112,7 @@ function updateOrderSummary() {
   let totalPrice = 0
   let text = "";
   cart.forEach(item => {
-    totalPieces += item.qty; // qty is pieces
-    // price in menu is per 10 pieces
+    totalPieces += item.qty;
     const linePrice = (item.qty / 10) * item.price;
     totalPrice += linePrice;
     text += `${item.name} x ${item.qty} = ${formatPrice(linePrice)}\n`;
@@ -146,7 +143,7 @@ function addToCart(src, qtyPieces = MIN_PIECES) {
     cart.push({
       src: item.src,
       name: item.name,
-      price: item.price, // price per 10 pieces
+      price: item.price,
       qty: qtyPieces
     });
   }
@@ -155,7 +152,6 @@ function addToCart(src, qtyPieces = MIN_PIECES) {
   renderCartPopup();
 }
 
-// Cart popup rendering and interactions
 const cartEl = document.getElementById("cart");
 const cartIcon = document.querySelector('.cart-icon');
 
@@ -186,17 +182,28 @@ function renderCartPopup() {
     `;
   });
   html += '</div>';
-  // total
   const totals = cart.reduce((acc, item) => {
     acc.pieces += item.qty;
     acc.price += (item.qty / 10) * item.price;
     return acc;
   }, {pieces: 0, price: 0});
-  html += `<div class="cart-footer"><p>Total: ${formatPrice(totals.price)} (${totals.pieces} pieces)</p><button class="cta order-whatsapp">Order via WhatsApp</button></div>`;
+  html += `
+  <div class="cart-footer">
+    <div class="c-f-wrapper">
+      <p>Total: ${formatPrice(totals.price)} (${totals.pieces} pieces)</p>
+      <button class="cta clear-btn" id="clear" onclick="clearCart()">Clear</button>
+    </div>
+    <a href="#contact" onclick="toggleCart()"><button class="cta">Go to Checkout</button></a>
+  </div>`;
   cartEl.innerHTML = html;
 }
 
-// Toggle cart visibility
+function clearCart() {
+  localStorage.clear()
+  updateOrderSummary()
+  renderCartPopup()
+}
+
 function toggleCart() {
   if (!cartEl) return;
   cartEl.classList.toggle('show');
@@ -205,7 +212,6 @@ function toggleCart() {
 
 if (cartIcon) cartIcon.addEventListener('click', toggleCart);
 
-// Cart event delegation
 if (cartEl) {
   cartEl.addEventListener('click', (e) => {
     const inc = e.target.closest('.ci-inc');
@@ -242,7 +248,6 @@ function changeCartQty(src, deltaPieces) {
   const item = cart.find(i=>i.src===src);
   if (!item) return;
   item.qty = Math.max(MIN_PIECES, item.qty + deltaPieces);
-  // ensure multiple of STEP
   if (item.qty % STEP !== 0) item.qty = Math.round(item.qty / STEP) * STEP;
   localStorage.setItem('cart', JSON.stringify(cart));
   renderCartPopup();
@@ -264,7 +269,6 @@ function openWhatsAppOrder() {
   const orderNotes = document.querySelector("#notes").value || '';
   const cart = JSON.parse(localStorage.getItem('cart')) || [];
   if (cart.length === 0) { alert('Cart is empty'); return; }
-  // Validate each item meets minimum and multiple
   for (const item of cart) {
     if (item.qty < MIN_PIECES || item.qty % STEP !== 0) {
       alert(`Each item must be at least ${MIN_PIECES} pieces and in multiples of ${STEP}.`);
@@ -287,11 +291,9 @@ function openWhatsAppOrder() {
   window.open(`https://wa.me/9779746428695?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
-// initialize
 updateOrderSummary();
 renderCartPopup();
 
-// also handle form submit (keep existing behaviour but delegate to same order building)
 const orderForm = document.querySelector('#orderForm');
 if (orderForm) {
   orderForm.addEventListener('submit', function(e){

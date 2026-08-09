@@ -101,6 +101,7 @@
 	background-color: var(--cream);
 	resize: none;
 	overflow: hidden;
+	pointer-events: none;
 }
 
 .o-form textarea:focus {

@@ -1,9 +1,10 @@
 .contact {
-  height: 100dvh;
+  height: 80dvh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+	border-top: var(--lborder);
 }
 
 .c-wrapper {

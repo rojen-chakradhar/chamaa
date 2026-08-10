@@ -13,6 +13,7 @@
 .heading {
   display: flex;
   align-items: center;
+  column-gap: 3rem;
   font-size: 7rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -21,7 +22,7 @@
 }
 
 .heading img {
-  height: 8.5rem;
+  height: 5rem;
   width: auto;
   object-fit: cover;
   object-position: center;
@@ -62,7 +63,7 @@
 }
 
 .why {
-  height: 90dvh;
+  height: 100dvh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -83,8 +84,8 @@
 
 .point {
   position: relative;
-  height: 30dvh;
-  width: 30dvw;
+  height: 250px;
+  width: 350px;
   aspect-ratio: 1;
   border: var(--dborder);
   color: var(--cream);
@@ -109,13 +110,6 @@
 }
 
 .why-title {
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.why-card-title {
   font-size: 2rem;
   font-weight: 500;
   line-height: 1.2;
@@ -180,7 +174,7 @@
   transform: scale(1.1);
 }
 
-.menu {
+.menu, .faq {
   min-height: max-content;
   width: 100%;
   display: flex;
@@ -191,7 +185,7 @@
   border-top: var(--dborder);
 }
 
-.m-heading {
+.m-heading, .faq-heading, .why-heading {
   margin-bottom: 3rem;
   font-size: 2rem;
   font-weight: 500;
@@ -207,4 +201,44 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 5rem;
   padding: 0 5rem;
+}
+
+.faq-container {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 0 5rem;
+}
+
+.faq-qn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: var(--lborder);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-wrap-mode: wrap;
+  text-wrap-style: balance;
+  color: var(--dbrown);
+  cursor: pointer;
+}
+
+.faq-qn:hover, .faq-qn:focus, .faq-qn:active {
+  border: var(--dborder);
+}
+
+.faq-ans {
+  padding: 10px;
+  border: var(--lborder);
+  border-top: none;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-wrap-mode: wrap;
+  text-wrap-style: balance;
+  color: var(--lbrown);
 }

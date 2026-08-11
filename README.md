@@ -31,3 +31,6 @@ and
 
 <h3>Github Repo Link:</h3>
 <a href="https://github.com/rojen-chakradhar/chamaa" target="_blank" style="text-decoration: underline;">click me!</a>
+
+<h6>AI usage:</h6>
+<p>I wanted people to order from online but i didnt want to use backend so i need some way to make people orde so i used chatgpt to know what are the ways that users can order online but i dont have to use backend, and it suggested to order through whatsapp.The cart, menu, form, and whatsapp were not ligning up even after days, so i had to use claude to solve it. but i didnt use claude directly. i gave it context, and told me what to do, and how to do, and i did it.</p>

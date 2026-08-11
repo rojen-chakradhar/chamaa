@@ -1,13 +1,29 @@
 .hero {
+  position: relative;
   min-height: 100dvh;
+  background: linear-gradient(to bottom, var(--black), var(--cream));
+}
+
+.hero video {
+  height: 100dvh;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  mix-blend-mode: multiply;
+}
+
+.h-t-wrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
   align-items: center;
   justify-content: center;
   padding: 0 2rem;
-  background: url('https://www.cooking-outdoors.com/wp-content/uploads/2013/07/Grilled-Brownies-with-Strawberries-Dessert03.jpg?x60323') no-repeat center;
-  background-size: cover;
 }
 
 .heading {
@@ -15,14 +31,16 @@
   align-items: center;
   column-gap: 3rem;
   font-size: 7rem;
-  font-weight: 600;
+  font-weight: 900;
   text-transform: uppercase;
   text-align: center;
+  -webkit-text-stroke: 1px var(--cream);
   color: var(--dbrown);
 }
 
 .heading img {
-  height: 5rem;
+  /* height: 5rem; */
+  height: 0.7em;
   width: auto;
   object-fit: cover;
   object-position: center;
@@ -31,10 +49,11 @@
 .tagline {
   margin-bottom: 3rem;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: capitalize;
   text-align: center;
   color: var(--lbrown);
+  -webkit-text-stroke: 1px var(--cream);
 }
 
 .hero .btns{

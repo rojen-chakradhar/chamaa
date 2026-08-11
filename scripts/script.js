@@ -4,7 +4,7 @@ const menu = [
     name: "Special Brownie",
     desc: "best",
     price: 300,
-    image: "https://www.theflavorbender.com/wp-content/uploads/2018/02/Fudgy-Brownies-The-Flavor-Bender-Featured-Image-SQ-16.jpg",
+    image: "./assets/images/special.webp",
     src: "special",
   },
   {
@@ -12,7 +12,7 @@ const menu = [
     name: "Fuzzy Brownie",
     desc: "tasty",
     price: 200,
-    image: "https://nakednutrition.com/cdn/shop/articles/Depositphotos_8628296_S_2000x.jpg?v=1689059503",
+    image: "./assets/images/fuzzy.webp",
     src: "fudgy",
   },
   {
@@ -20,7 +20,7 @@ const menu = [
     name: "Cakey Brownie",
     desc: "delicous",
     price: 200,
-    image: "https://www.soulfullymade.com/wp-content/uploads/2023/03/cake-brownies-recipe-square-featured.jpg",
+    image: "./assets/images/cakey.webp",
     src: "cakey",
   },
   {
@@ -28,7 +28,7 @@ const menu = [
     name: "Nuts Brownie",
     desc: "tasty",
     price: 200,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAiqlkBiCXCh2zB4kNDM-_blbTPqBrp4zHlRtYHSB7o9UiyaRegetHWfZl&s=10",
+    image: "./assets/images/nuts.webp",
     src: "nuts",
   },
   {
@@ -36,7 +36,7 @@ const menu = [
     name: "Brownie Bites",
     desc: "tasty",
     price: 50,
-    image: "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2021/11/11/REE_DRUMMOND_DARK_CHOCOLATE_BROWNIE_BITES_H.jpg.rend.hgtvcom.1280.1280.suffix/1636679032846.webp",
+    image: "./assets/images/bites.webp",
     src: "bites",
   },
   {
@@ -44,7 +44,7 @@ const menu = [
     name: "Red Velvet Brownie",
     desc: "tasty",
     price: 250,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKIt9CtMu4xc-SSS4yib7Wadx7fW1g1JEbhxCqXs-DgbP1oHQWVCMYBSDR&s=10",
+    image: "./assets/images/red-velvet.webp",
     src: "red-velvet",
   }
 ];

@@ -87,23 +87,3 @@ html {
 a:focus {
   outline: 1px dotted var(--dbrown);
 }
-
-@keyframes popup {
-  0% {
-    opacity: 0;
-    bottom: 4rem;
-  } 100% {
-    opacity: 1;
-    bottom: 6rem;
-  }
-}
-
-@keyframes toast {
-  0% {
-    opacity: 0;
-    right: 0;
-  } 100% {
-    opacity: 1;
-    right: 1rem;
-  }
-}

@@ -126,14 +126,3 @@
 	z-index: 1001;
 	cursor: pointer;
 }
-
-@media (max-width: 640px) {
-	.cart {
-		right: 0.5rem;
-		left: 0.5rem;
-		width: auto;
-	}
-	.cart-icon {
-		right: 0.5rem;
-	}
-}
